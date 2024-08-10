@@ -120,7 +120,9 @@ body {
 
 /* Heading styles */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--clr-primary);
   font-weight: bold;
 }
@@ -137,7 +139,9 @@ h3 {
   font-size: var(--h3);
 }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   color: var(--clr-dark);
 }
 
@@ -419,7 +423,6 @@ header {
   opacity: 0.6;
 }
 
-
 .homeAbout--text p {
   padding-top: 3rem;
   text-align: justify;
@@ -431,7 +434,6 @@ header {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-
 }
 
 /* HOME TRENDS */
@@ -499,6 +501,9 @@ header {
   transition: 0.4s ease-in;
 }
 
+.card a:hover {
+  opacity: 0.5;
+}
 /* MOBILE RESPONSIVE | HOME TRENDS  */
 @media screen and (max-width: 520px) {
   .homeTrends__wrapper {
@@ -519,7 +524,7 @@ header {
   flex-direction: column;
   align-items: center;
 }
-.cta h2 { 
+.cta h2 {
   color: var(--clr-dark);
 }
 
@@ -622,6 +627,7 @@ footer {
 
 .aboutBanner__socials i:hover {
   opacity: 0.5;
+    transform: scale(1.5);
 }
 
 /* MOBILE RESPONSIVE | ABOUT BANNER  */
@@ -688,6 +694,9 @@ footer {
   margin: 0 auto;
 }
 
+.services__bg {
+  position: relative;
+}
 .services__bg:nth-child(even) .services__card .servicesContent {
   display: flex;
   flex-direction: row-reverse;
@@ -734,6 +743,14 @@ footer {
   position: absolute;
   left: 0;
   opacity: 0.6;
+}
+
+.down {
+  position: absolute;
+  left: 50%;
+  bottom: 4rem;
+  color: var(--clr-primary);
+  font-size: var(--h3);
 }
 
 /* MOBILE RESPONSIVE | SERVICES PAGE */
@@ -810,10 +827,13 @@ footer {
   margin-top: 4rem;
 }
 
-
 .updatesTrends__card a {
   color: var(--clr-primary);
   margin-bottom: 5rem;
+}
+
+.updatesTrends__card a:hover {
+  opacity: 0.5;
 }
 
 .right {
@@ -850,6 +870,11 @@ footer {
   flex-direction: row;
   gap: 2rem;
   margin-bottom: 4rem;
+}
+
+.recent--card:hover {
+  transform: scale(1.1);
+  background-color: rgb(43, 43, 43, 0.1);
 }
 
 .recent--info {
@@ -956,6 +981,7 @@ footer {
 
 .contact--socials i:hover {
   color: var(--clr-primary);
+  transform: scale(1.5);
 }
 
 .contact__form {
@@ -967,6 +993,11 @@ footer {
 .contact__form input {
   padding: 1.5rem 2rem;
   font-family: var(--font-style);
+}
+
+.contact__form input:hover,
+.contact__form textarea:hover {
+  transform: scale(1.1);
 }
 
 .contact__form textarea {
